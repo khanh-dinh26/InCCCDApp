@@ -1,0 +1,87 @@
+# ==========================================================
+#  .gitignore cho project WinForms (Visual Studio / MSBuild)
+#  Mục tiêu: không đẩy bin/, obj/, packages/, .vs/ ... lên GitHub
+# ==========================================================
+
+# ---------- Visual Studio ----------
+.vs/
+*.suo
+*.user
+*.userosscache
+*.userprefs
+*.sln.docstates
+*.rsuser
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pfx
+*.publishsettings
+
+# ---------- Kết quả build ----------
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+*.tlog
+*.log
+*.pdb
+*.ilk
+*.obj
+*.iobj
+*.ipdb
+*.cache
+*.pidb
+*.svclog
+*.scc
+*.tmp
+*.bak
+
+# ---------- NuGet ----------
+# Thư mục packages/ do NuGet tự tải lại khi build (Restore NuGet Packages)
+[Pp]ackages/
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ---------- Test & coverage ----------
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+coverage*.info
+
+# ---------- ReSharper / Rider / VS Code ----------
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+.idea/
+.vscode/
+
+# ---------- Windows ----------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ---------- Tạm / soạn thảo ----------
+*.swp
+*~
+*.orig
+*.rej
