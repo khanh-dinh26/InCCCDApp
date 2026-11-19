@@ -638,21 +638,21 @@ namespace InCCCDApp
                     int firstIdx = page * CARDS_PER_PAGE;
                     int lastIdx = Math.Min(firstIdx + CARDS_PER_PAGE - 1, total - 1);
 
-                    // TRANG LẺ: MẶT TRƯỚC - xếp dọc 1 cột sát lề TRÁI, chừa trống bên phải
+                    // TRANG LẺ: MẶT TRƯỚC - xếp dọc 1 cột sát lề PHẢI, chừa trống bên trái
                     for (int idx = firstIdx; idx <= lastIdx; idx++)
                     {
-                        AppendCardParagraph(doc, danhSachCCCD[idx].Item1, Alignment.left, idx == lastIdx);
+                        AppendCardParagraph(doc, danhSachCCCD[idx].Item1, Alignment.right, idx == lastIdx);
                     }
 
                     if (hasAnyBack)
                     {
                         doc.InsertParagraph().InsertPageBreakAfterSelf();
 
-                        // TRANG CHẴN: MẶT SAU - lật gương sang lề PHẢI (giữ nguyên thứ tự trên xuống)
+                        // TRANG CHẴN: MẶT SAU - lật gương sang lề TRÁI (giữ nguyên thứ tự trên xuống)
                         // để khi in 2 mặt lật giấy theo cạnh dài, mặt sau khớp đúng vị trí mặt trước.
                         for (int idx = firstIdx; idx <= lastIdx; idx++)
                         {
-                            AppendCardParagraph(doc, danhSachCCCD[idx].Item2, Alignment.right, idx == lastIdx);
+                            AppendCardParagraph(doc, danhSachCCCD[idx].Item2, Alignment.left, idx == lastIdx);
                         }
                     }
 

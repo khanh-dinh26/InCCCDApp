@@ -9,8 +9,8 @@ Phần mềm Windows Forms hỗ trợ **in thẻ CCCD 2 mặt đối xứng trê
 - Xoay ảnh, phóng to / kéo ảnh (Ctrl + lăn chuột, giữ chuột phải để kéo).
 - Danh sách chờ in: **4 thẻ / tờ A4**, xếp dọc 1 cột, quá 4 thẻ tự động sang tờ mới.
 - Xuất Word (`.docx`):
-  - Trang lẻ = **mặt trước**, sát lề trái, chừa trống bên phải.
-  - Trang chẵn = **mặt sau**, lật gương sang lề phải để khớp khi in 2 mặt.
+  - Trang lẻ = **mặt trước**, sát lề phải, chừa trống bên trái.
+  - Trang chẵn = **mặt sau**, lật gương sang lề trái để khớp khi in 2 mặt.
   - Khoảng hở giữa các thẻ ~14 mm và lề trên/dưới rộng, dễ cắt.
 
 > **Khi in 2 mặt:** chọn **"Lật theo cạnh dài" (Flip on long edge)** để mặt sau khớp đúng vị trí mặt trước.
